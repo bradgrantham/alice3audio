@@ -1,0 +1,275 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:stereo_3_5mm_jack
+LIBS:alice3audio-cache
+EELAYER 25 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Alice 3 Audio"
+Date "01/28/2016"
+Rev "v1"
+Comp "Earwing, Inc."
+Comment1 "Brad Grantham"
+Comment2 "grantham@plunk.org"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X05 P1
+U 1 1 56AA98F0
+P 3150 5100
+F 0 "P1" H 3150 5400 50  0000 C CNN
+F 1 "CONN_01X05" V 3250 5100 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x05" H 3150 5100 60  0001 C CNN
+F 3 "" H 3150 5100 60  0000 C CNN
+	1    3150 5100
+	-1   0    0    1   
+$EndComp
+$Comp
+L STEREO_3_5MM_JACK J1
+U 1 1 56AAA164
+P 9450 5100
+F 0 "J1" H 9100 4900 50  0000 C CNN
+F 1 "STEREO_3_5MM_JACK" H 9300 5350 50  0000 C CNN
+F 2 "" H 9450 5100 60  0001 C CNN
+F 3 "" H 9450 5100 60  0000 C CNN
+	1    9450 5100
+	-1   0    0    1   
+$EndComp
+$Comp
+L PWR_FLAG #FLG01
+U 1 1 56AAA1FF
+P 950 1000
+F 0 "#FLG01" H 950 1095 50  0001 C CNN
+F 1 "PWR_FLAG" H 950 1180 50  0000 C CNN
+F 2 "" H 950 1000 60  0000 C CNN
+F 3 "" H 950 1000 60  0000 C CNN
+	1    950  1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG02
+U 1 1 56AAA217
+P 1650 1000
+F 0 "#FLG02" H 1650 1095 50  0001 C CNN
+F 1 "PWR_FLAG" H 1650 1180 50  0000 C CNN
+F 2 "" H 1650 1000 60  0000 C CNN
+F 3 "" H 1650 1000 60  0000 C CNN
+	1    1650 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR03
+U 1 1 56AAA28B
+P 950 1000
+F 0 "#PWR03" H 950 850 50  0001 C CNN
+F 1 "+3V3" H 950 1140 50  0000 C CNN
+F 2 "" H 950 1000 60  0000 C CNN
+F 3 "" H 950 1000 60  0000 C CNN
+	1    950  1000
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 56AAA2A5
+P 1650 1000
+F 0 "#PWR04" H 1650 750 50  0001 C CNN
+F 1 "GND" H 1650 850 50  0000 C CNN
+F 2 "" H 1650 1000 60  0000 C CNN
+F 3 "" H 1650 1000 60  0000 C CNN
+	1    1650 1000
+	1    0    0    -1  
+$EndComp
+Text GLabel 3350 5200 2    60   Output ~ 0
+P7
+Text GLabel 3350 5300 2    60   Output ~ 0
+P6
+Text GLabel 9000 5150 0    60   Input ~ 0
+RIGHT
+Text GLabel 9000 5250 0    60   Input ~ 0
+LEFT
+Text GLabel 5300 3950 0    60   Input ~ 0
+P7
+Text GLabel 6550 4250 2    60   Output ~ 0
+LEFT
+$Comp
+L R R3
+U 1 1 56AAA661
+P 5700 4100
+F 0 "R3" V 5780 4100 50  0000 C CNN
+F 1 "1K1" V 5700 4100 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 5630 4100 30  0001 C CNN
+F 3 "" H 5700 4100 30  0000 C CNN
+	1    5700 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 56AAA6A7
+P 5700 4400
+F 0 "R4" V 5780 4400 50  0000 C CNN
+F 1 "470" V 5700 4400 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 5630 4400 30  0001 C CNN
+F 3 "" H 5700 4400 30  0000 C CNN
+	1    5700 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C2
+U 1 1 56AAA6CA
+P 6200 4250
+F 0 "C2" H 6225 4350 50  0000 L CNN
+F 1 "1uF" H 6225 4150 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D5_L11_P2.5" H 6200 4250 60  0001 C CNN
+F 3 "" H 6200 4250 60  0000 C CNN
+	1    6200 4250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6550 4250 6350 4250
+Wire Wire Line
+	6050 4250 5700 4250
+Wire Wire Line
+	5700 3950 5300 3950
+$Comp
+L GND #PWR05
+U 1 1 56AAA768
+P 5700 4550
+F 0 "#PWR05" H 5700 4300 50  0001 C CNN
+F 1 "GND" H 5700 4400 50  0000 C CNN
+F 2 "" H 5700 4550 60  0000 C CNN
+F 3 "" H 5700 4550 60  0000 C CNN
+	1    5700 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 56AAA79F
+P 8300 5300
+F 0 "#PWR06" H 8300 5050 50  0001 C CNN
+F 1 "GND" H 8300 5150 50  0000 C CNN
+F 2 "" H 8300 5300 60  0000 C CNN
+F 3 "" H 8300 5300 60  0000 C CNN
+	1    8300 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 5300 8300 5000
+Wire Wire Line
+	8300 5000 9000 5000
+$Comp
+L GND #PWR07
+U 1 1 56AAA7D2
+P 4200 5100
+F 0 "#PWR07" H 4200 4850 50  0001 C CNN
+F 1 "GND" H 4200 4950 50  0000 C CNN
+F 2 "" H 4200 5100 60  0000 C CNN
+F 3 "" H 4200 5100 60  0000 C CNN
+	1    4200 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR08
+U 1 1 56AAA7F3
+P 3850 4700
+F 0 "#PWR08" H 3850 4550 50  0001 C CNN
+F 1 "+3V3" H 3850 4840 50  0000 C CNN
+F 2 "" H 3850 4700 60  0000 C CNN
+F 3 "" H 3850 4700 60  0000 C CNN
+	1    3850 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 5000 3850 5000
+Wire Wire Line
+	3850 5000 3850 4700
+Wire Wire Line
+	3350 4900 4200 4900
+Wire Wire Line
+	4200 4900 4200 5100
+Text GLabel 5300 3000 0    60   Input ~ 0
+P6
+Text GLabel 6550 3300 2    60   Output ~ 0
+RIGHT
+$Comp
+L R R1
+U 1 1 56AAA98E
+P 5700 3150
+F 0 "R1" V 5780 3150 50  0000 C CNN
+F 1 "1K1" V 5700 3150 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 5630 3150 30  0001 C CNN
+F 3 "" H 5700 3150 30  0000 C CNN
+	1    5700 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 56AAA994
+P 5700 3450
+F 0 "R2" V 5780 3450 50  0000 C CNN
+F 1 "470" V 5700 3450 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 5630 3450 30  0001 C CNN
+F 3 "" H 5700 3450 30  0000 C CNN
+	1    5700 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C1
+U 1 1 56AAA99A
+P 6200 3300
+F 0 "C1" H 6225 3400 50  0000 L CNN
+F 1 "1uF" H 6225 3200 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D5_L11_P2.5" H 6200 3300 60  0001 C CNN
+F 3 "" H 6200 3300 60  0000 C CNN
+	1    6200 3300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6550 3300 6350 3300
+Wire Wire Line
+	6050 3300 5700 3300
+Wire Wire Line
+	5700 3000 5300 3000
+$Comp
+L GND #PWR09
+U 1 1 56AAA9A3
+P 5700 3600
+F 0 "#PWR09" H 5700 3350 50  0001 C CNN
+F 1 "GND" H 5700 3450 50  0000 C CNN
+F 2 "" H 5700 3600 60  0000 C CNN
+F 3 "" H 5700 3600 60  0000 C CNN
+	1    5700 3600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3350 5100
+$EndSCHEMATC
